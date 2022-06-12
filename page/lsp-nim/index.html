@@ -1166,6 +1166,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-camel/" class="md-nav__link">
+        Camel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-ccls/" class="md-nav__link">
         C++ (ccls)
       </a>
@@ -1446,7 +1460,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-gopls/" class="md-nav__link">
+      <a href="../lsp-gleam/" class="md-nav__link">
+        Gleam
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual-language-docs/lsp-gopls/" class="md-nav__link">
         Go (gopls)
       </a>
     </li>
@@ -1851,8 +1879,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-nim-nimsuggest-mapping" class="md-nav__link">
-    lsp-nim-nimsuggest-mapping
+  <a href="#lsp-nim-langserver" class="md-nav__link">
+    lsp-nim-langserver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nim-nimsuggest-path" class="md-nav__link">
+    lsp-nim-nimsuggest-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nim-project-mapping" class="md-nav__link">
+    lsp-nim-project-mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nim-timeout" class="md-nav__link">
+    lsp-nim-timeout
   </a>
   
 </li>
@@ -1893,6 +1942,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ocaml-lsp-server/" class="md-nav__link">
         OCaml (ocaml-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-openscad/" class="md-nav__link">
+        OpenSCAD
       </a>
     </li>
   
@@ -2298,7 +2361,21 @@
   
     <li class="md-nav__item">
       <a href="../lsp-terraform/" class="md-nav__link">
-        Terraform
+        Terraform (terraform-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-terraform-ls/" class="md-nav__link">
+        Terraform (terraform-ls)
       </a>
     </li>
   
@@ -2791,6 +2868,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/" class="md-nav__link">
+        Python, debbuging with poetry + pyenv
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2988,8 +3079,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-nim-nimsuggest-mapping" class="md-nav__link">
-    lsp-nim-nimsuggest-mapping
+  <a href="#lsp-nim-langserver" class="md-nav__link">
+    lsp-nim-langserver
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nim-nimsuggest-path" class="md-nav__link">
+    lsp-nim-nimsuggest-path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nim-project-mapping" class="md-nav__link">
+    lsp-nim-project-mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-nim-timeout" class="md-nav__link">
+    lsp-nim-timeout
   </a>
   
 </li>
@@ -3061,10 +3173,27 @@
 <p><code>nimble install nimlsp</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
-<h3 id="lsp-nim-nimsuggest-mapping"><code>lsp-nim-nimsuggest-mapping</code><a class="headerlink" href="#lsp-nim-nimsuggest-mapping" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>plist</code></p>
+<h3 id="lsp-nim-langserver"><code>lsp-nim-langserver</code><a class="headerlink" href="#lsp-nim-langserver" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>number</code></p>
+<p><em>Default:</em> <code>nimlangserver</code></p>
+<p>Path to <code>nimlangserver</code></p>
+<hr />
+<h3 id="lsp-nim-nimsuggest-path"><code>lsp-nim-nimsuggest-path</code><a class="headerlink" href="#lsp-nim-nimsuggest-path" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>number</code></p>
+<p><em>Default:</em> <code>nimsuggest</code></p>
+<p>Path to <code>nimsuggest</code> to use.</p>
+<hr />
+<h3 id="lsp-nim-project-mapping"><code>lsp-nim-project-mapping</code><a class="headerlink" href="#lsp-nim-project-mapping" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(lsp-repeatable-vector plist)</code></p>
 <p><em>Default:</em> <code>[]</code></p>
-<p>The charset to use by the Ada Language server. Defaults to <code>UTF-8</code>.</p>
+<p>Nimsuggest project mapping. Sample value</p>
+<p>[(:projectFile "root.nim"
+  :fileRegex ".*.nim")]</p>
+<hr />
+<h3 id="lsp-nim-timeout"><code>lsp-nim-timeout</code><a class="headerlink" href="#lsp-nim-timeout" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>number</code></p>
+<p><em>Default:</em> <code>120000</code></p>
+<p>Timeout for restarting <code>nimsuggest</code></p>
 <hr />
 
 <!-- Source file information -->
@@ -3074,7 +3203,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 12, 2022</span>
       
     
   </small>

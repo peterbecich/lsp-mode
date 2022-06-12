@@ -19,7 +19,7 @@
     
     
       
-        <title>Lsp terraform ls - LSP Mode - LSP support for Emacs</title>
+        <title>Terraform (terraform-ls) - LSP Mode - LSP support for Emacs</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lsp terraform ls
+              Terraform (terraform-ls)
             
           </span>
         </div>
@@ -223,13 +223,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../languages/" class="md-tabs__link">
+      <a href="../languages/" class="md-tabs__link md-tabs__link--active">
         Languages
       </a>
     </li>
@@ -1036,12 +1038,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       
       
@@ -1150,6 +1154,20 @@
     <li class="md-nav__item">
       <a href="../lsp-beancount/" class="md-nav__link">
         Beancount
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-camel/" class="md-nav__link">
+        Camel
       </a>
     </li>
   
@@ -1442,7 +1460,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-gopls/" class="md-nav__link">
+      <a href="../lsp-gleam/" class="md-nav__link">
+        Gleam
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual-language-docs/lsp-gopls/" class="md-nav__link">
         Go (gopls)
       </a>
     </li>
@@ -1808,6 +1840,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ocaml-lsp-server/" class="md-nav__link">
         OCaml (ocaml-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-openscad/" class="md-nav__link">
+        OpenSCAD
       </a>
     </li>
   
@@ -2213,8 +2259,212 @@
   
     <li class="md-nav__item">
       <a href="../lsp-terraform/" class="md-nav__link">
-        Terraform
+        Terraform (terraform-lsp)
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Terraform (terraform-ls)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Terraform (terraform-ls)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-not-available" class="md-nav__link">
+    Debugger: Not available
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-note" class="md-nav__link">
+    Server note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terraform-ls" class="md-nav__link">
+    terraform-ls
+  </a>
+  
+    <nav class="md-nav" aria-label="terraform-ls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-validate" class="md-nav__link">
+    lsp-terraform-ls-validate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-init" class="md-nav__link">
+    lsp-terraform-ls-init
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-lens" class="md-nav__link">
+    Code Lens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-token-support" class="md-nav__link">
+    Semantic token support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treeview-controls" class="md-nav__link">
+    Treeview controls
+  </a>
+  
+    <nav class="md-nav" aria-label="Treeview controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#providers-widget" class="md-nav__link">
+    Providers widget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-calls-widget" class="md-nav__link">
+    Module calls widget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+    <nav class="md-nav" aria-label="Available configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-enable-show-reference" class="md-nav__link">
+    lsp-terraform-ls-enable-show-reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-module-calls-position-params" class="md-nav__link">
+    lsp-terraform-ls-module-calls-position-params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-providers-position-params" class="md-nav__link">
+    lsp-terraform-ls-providers-position-params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-server" class="md-nav__link">
+    lsp-terraform-ls-server
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2706,6 +2956,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/" class="md-nav__link">
+        Python, debbuging with poetry + pyenv
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2895,12 +3159,121 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#server-note" class="md-nav__link">
+    Server note
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terraform-ls" class="md-nav__link">
+    terraform-ls
+  </a>
+  
+    <nav class="md-nav" aria-label="terraform-ls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-validate" class="md-nav__link">
+    lsp-terraform-ls-validate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-init" class="md-nav__link">
+    lsp-terraform-ls-init
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-lens" class="md-nav__link">
+    Code Lens
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#semantic-token-support" class="md-nav__link">
+    Semantic token support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treeview-controls" class="md-nav__link">
+    Treeview controls
+  </a>
+  
+    <nav class="md-nav" aria-label="Treeview controls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#providers-widget" class="md-nav__link">
+    Providers widget
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-calls-widget" class="md-nav__link">
+    Module calls widget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#available-configurations" class="md-nav__link">
     Available configurations
   </a>
   
     <nav class="md-nav" aria-label="Available configurations">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-enable-show-reference" class="md-nav__link">
+    lsp-terraform-ls-enable-show-reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-module-calls-position-params" class="md-nav__link">
+    lsp-terraform-ls-module-calls-position-params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-providers-position-params" class="md-nav__link">
+    lsp-terraform-ls-providers-position-params
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#lsp-terraform-ls-server" class="md-nav__link">
@@ -2975,7 +3348,84 @@
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <p>For more instructions on how to install manually, check <a href="https://github.com/hashicorp/terraform-ls">here</a>.</p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<hr />
+<p>author: psibi
+template: comment.html
+root_file: docs/manual-language-docs/lsp-terraform-ls.md</p>
+<hr />
+<h2 id="server-note">Server note<a class="headerlink" href="#server-note" title="Permanent link">#</a></h2>
+<p>Currently the mode supports two language servers. This <a href="https://emacs-lsp.github.io/lsp-mode/page/faq/#i-have-multiple-language-servers-registered-for-language-foo-which-one-will-be-used-when-opening-a-project">FAQ entry</a>
+shows how to choose a specific one. If you would want to go with the
+official Hashicorp's language server, set this:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-disabled-clients</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">tfls</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="terraform-ls">terraform-ls<a class="headerlink" href="#terraform-ls" title="Permanent link">#</a></h2>
+<h3 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h3>
+<h4 id="lsp-terraform-ls-validate"><code>lsp-terraform-ls-validate</code><a class="headerlink" href="#lsp-terraform-ls-validate" title="Permanent link">#</a></h4>
+<p>Runs terraform validate on project root. All the violations are
+published back in the buffer.</p>
+<p><img alt="" src="../../examples/lsp-terraform-validate.png" /></p>
+<h4 id="lsp-terraform-ls-init"><code>lsp-terraform-ls-init</code><a class="headerlink" href="#lsp-terraform-ls-init" title="Permanent link">#</a></h4>
+<p>Runs <code>terraform init</code> using terraform available from <code>$PATH</code>. You have
+to make sure that that proper credentials are there.</p>
+<p>Note that this is a synchronous action and will timeout after a
+certain amount of time.</p>
+<h3 id="code-lens">Code Lens<a class="headerlink" href="#code-lens" title="Permanent link">#</a></h3>
+<p>This is an experimental feature which can be enabled via the option
+<code>lsp-terraform-ls-enable-show-reference</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-terraform-ls-enable-show-reference</span> <span class="no">t</span><span class="p">)</span>
+</code></pre></div>
+<p>This gif demonstrates how this feature is used:</p>
+<p><img alt="" src="../../examples/lsp-terraform-code-lens-refs.gif" /></p>
+<h3 id="semantic-token-support">Semantic token support<a class="headerlink" href="#semantic-token-support" title="Permanent link">#</a></h3>
+<p>Make sure to enable these two variables to ensure that you have
+semantic token support for terraform mode:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-semantic-tokens-enable</span> <span class="no">t</span><span class="p">)</span>
+<span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-semantic-tokens-honor-refresh-requests</span> <span class="no">t</span><span class="p">)</span>
+</code></pre></div>
+<p>This is how the code looks without semantic tokens support:</p>
+<p><img alt="" src="../../examples/lsp-terraform-without-semantic-token.png" /></p>
+<p>And with semantic token support you get more contextual information
+via different faces:</p>
+<p><img alt="" src="../../examples/lsp-terraform-with-semantic-token.png" /></p>
+<h3 id="treeview-controls">Treeview controls<a class="headerlink" href="#treeview-controls" title="Permanent link">#</a></h3>
+<p>For this feature to work, make sure that you have <a href="https://github.com/emacs-lsp/lsp-treemacs">lsp-treemacs</a>
+installed.</p>
+<h4 id="providers-widget">Providers widget<a class="headerlink" href="#providers-widget" title="Permanent link">#</a></h4>
+<p>This widget can be invoked by <code>lsp-terraform-ls-providers</code>.</p>
+<p><img alt="" src="../../examples/lsp-terraform-providers-treemacs.png" /></p>
+<h4 id="module-calls-widget">Module calls widget<a class="headerlink" href="#module-calls-widget" title="Permanent link">#</a></h4>
+<p>This widget can be invoked by <code>lsp-terraform-ls-module-calls</code>.</p>
+<p>If the modules data is empty, you might need to do <code>terraform init</code>
+for the project.</p>
+<p>The widget has a minor mode named
+<code>lsp-terraform-modules-mode</code>. Following keybinding are available
+within the mode:</p>
+<ul>
+<li><code>g</code>: Refresh modules view</li>
+</ul>
+<p><img alt="" src="../../examples/lsp-terraform-modules-treemacs.png" /></p>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-terraform-ls-enable-show-reference"><code>lsp-terraform-ls-enable-show-reference</code><a class="headerlink" href="#lsp-terraform-ls-enable-show-reference" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Enable reference counts.</p>
+<p>Display reference counts above top level blocks and
+attributes.  This is an experimental feature provided by the
+language server.</p>
+<hr />
+<h3 id="lsp-terraform-ls-module-calls-position-params"><code>lsp-terraform-ls-module-calls-position-params</code><a class="headerlink" href="#lsp-terraform-ls-module-calls-position-params" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>list</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>The optional module calls tree position params.
+Defaults to side following treemacs default.</p>
+<hr />
+<h3 id="lsp-terraform-ls-providers-position-params"><code>lsp-terraform-ls-providers-position-params</code><a class="headerlink" href="#lsp-terraform-ls-providers-position-params" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>list</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>The optional providers tree position params.
+Defaults to side following treemacs default.</p>
+<hr />
 <h3 id="lsp-terraform-ls-server"><code>lsp-terraform-ls-server</code><a class="headerlink" href="#lsp-terraform-ls-server" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (file :tag File) (repeat string))</code></p>
 <p><em>Default:</em> <code>terraform-ls</code></p>
@@ -2989,7 +3439,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 12, 2022</span>
       
     
   </small>
@@ -3003,6 +3453,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../lsp-terraform/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Terraform (terraform-lsp)" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Terraform (terraform-lsp)
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lsp-tex/" class="md-footer__link md-footer__link--next" aria-label="Next: TeX, LaTeX, etc (digestif)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              TeX, LaTeX, etc (digestif)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

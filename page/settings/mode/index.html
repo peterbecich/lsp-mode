@@ -841,6 +841,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-apply-edits-after-file-operations" class="md-nav__link">
+    lsp-apply-edits-after-file-operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-auto-configure" class="md-nav__link">
     lsp-auto-configure
   </a>
@@ -1247,6 +1254,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-progress-spinner-type" class="md-nav__link">
+    lsp-progress-spinner-type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-progress-via-spinner" class="md-nav__link">
     lsp-progress-via-spinner
   </a>
@@ -1396,6 +1410,13 @@
         <li class="md-nav__item">
   <a href="#lsp-vscode-ext-url" class="md-nav__link">
     lsp-vscode-ext-url
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-warn-no-matched-clients" class="md-nav__link">
+    lsp-warn-no-matched-clients
   </a>
   
 </li>
@@ -1804,6 +1825,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-camel/" class="md-nav__link">
+        Camel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-ccls/" class="md-nav__link">
         C++ (ccls)
       </a>
@@ -2084,7 +2119,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lsp-gopls/" class="md-nav__link">
+      <a href="../../lsp-gleam/" class="md-nav__link">
+        Gleam
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual-language-docs/lsp-gopls/" class="md-nav__link">
         Go (gopls)
       </a>
     </li>
@@ -2450,6 +2499,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-ocaml-lsp-server/" class="md-nav__link">
         OCaml (ocaml-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-openscad/" class="md-nav__link">
+        OpenSCAD
       </a>
     </li>
   
@@ -2855,7 +2918,21 @@
   
     <li class="md-nav__item">
       <a href="../../lsp-terraform/" class="md-nav__link">
-        Terraform
+        Terraform (terraform-lsp)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-terraform-ls/" class="md-nav__link">
+        Terraform (terraform-ls)
       </a>
     </li>
   
@@ -3348,6 +3425,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/" class="md-nav__link">
+        Python, debbuging with poetry + pyenv
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -3540,6 +3631,13 @@
         <li class="md-nav__item">
   <a href="#lsp-after-uninitialized-functions" class="md-nav__link">
     lsp-after-uninitialized-functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lsp-apply-edits-after-file-operations" class="md-nav__link">
+    lsp-apply-edits-after-file-operations
   </a>
   
 </li>
@@ -3951,6 +4049,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-progress-spinner-type" class="md-nav__link">
+    lsp-progress-spinner-type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-progress-via-spinner" class="md-nav__link">
     lsp-progress-via-spinner
   </a>
@@ -4105,6 +4210,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#lsp-warn-no-matched-clients" class="md-nav__link">
+    lsp-warn-no-matched-clients
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lsp-workspace-folders-changed-functions" class="md-nav__link">
     lsp-workspace-folders-changed-functions
   </a>
@@ -4194,6 +4306,14 @@ for a new workspace.</p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>List of functions to be called after a Language Server has been uninitialized.</p>
 <hr />
+<h3 id="lsp-apply-edits-after-file-operations"><code>lsp-apply-edits-after-file-operations</code><a class="headerlink" href="#lsp-apply-edits-after-file-operations" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Whether to apply edits returned by server after file operations if any.
+Applicable only if server supports workspace.fileOperations for operations:
+<code>workspace/willRenameFiles</code>, <code>workspace/willCreateFiles</code> and
+<code>workspace/willDeleteFiles</code>.</p>
+<hr />
 <h3 id="lsp-auto-configure"><code>lsp-auto-configure</code><a class="headerlink" href="#lsp-auto-configure" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -4254,7 +4374,7 @@ before saving a document.</p>
 <hr />
 <h3 id="lsp-client-packages"><code>lsp-client-packages</code><a class="headerlink" href="#lsp-client-packages" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat symbol)</code></p>
-<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-ansible lsp-bash lsp-beancount lsp-clangd lsp-clojure lsp-cmake lsp-crystal lsp-csharp lsp-css lsp-d lsp-dart lsp-dhall lsp-docker lsp-dockerfile lsp-elm lsp-elixir lsp-emmet lsp-erlang lsp-eslint lsp-fortran lsp-fsharp lsp-gdscript lsp-go lsp-graphql lsp-hack lsp-grammarly lsp-groovy lsp-haskell lsp-haxe lsp-idris lsp-java lsp-javascript lsp-json lsp-kotlin lsp-latex lsp-ltex lsp-lua lsp-markdown lsp-nginx lsp-nim lsp-nix lsp-magik lsp-metals lsp-mssql lsp-ocaml lsp-pascal lsp-perl lsp-perlnavigator lsp-php lsp-pwsh lsp-pyls lsp-pylsp lsp-pyright lsp-python-ms lsp-purescript lsp-r lsp-remark lsp-rf lsp-rust lsp-solargraph lsp-sorbet lsp-sourcekit lsp-sonarlint lsp-tailwindcss lsp-tex lsp-terraform lsp-toml lsp-ttcn3 lsp-typeprof lsp-v lsp-vala lsp-verilog lsp-vetur lsp-volar lsp-vhdl lsp-vimscript lsp-xml lsp-yaml lsp-sqls lsp-svelte lsp-steep lsp-zig)</code></p>
+<p><em>Default:</em> <code>(ccls lsp-actionscript lsp-ada lsp-angular lsp-ansible lsp-bash lsp-beancount lsp-clangd lsp-clojure lsp-cmake lsp-crystal lsp-csharp lsp-css lsp-d lsp-dart lsp-dhall lsp-docker lsp-dockerfile lsp-elm lsp-elixir lsp-emmet lsp-erlang lsp-eslint lsp-fortran lsp-fsharp lsp-gdscript lsp-go lsp-gleam lsp-graphql lsp-hack lsp-grammarly lsp-groovy lsp-haskell lsp-haxe lsp-idris lsp-java lsp-javascript lsp-json lsp-kotlin lsp-latex lsp-ltex lsp-lua lsp-markdown lsp-nginx lsp-nim lsp-nix lsp-magik lsp-metals lsp-mssql lsp-ocaml lsp-openscad lsp-pascal lsp-perl lsp-perlnavigator lsp-php lsp-pwsh lsp-pyls lsp-pylsp lsp-pyright lsp-python-ms lsp-purescript lsp-r lsp-remark lsp-rf lsp-rust lsp-solargraph lsp-sorbet lsp-sourcekit lsp-sonarlint lsp-tailwindcss lsp-tex lsp-terraform lsp-toml lsp-ttcn3 lsp-typeprof lsp-v lsp-vala lsp-verilog lsp-vetur lsp-volar lsp-vhdl lsp-vimscript lsp-xml lsp-yaml lsp-sqls lsp-svelte lsp-steep lsp-zig)</code></p>
 <p>List of the clients to be automatically required.</p>
 <hr />
 <h3 id="lsp-completion-default-behaviour"><code>lsp-completion-default-behaviour</code><a class="headerlink" href="#lsp-completion-default-behaviour" title="Permanent link">#</a></h3>
@@ -4534,6 +4654,12 @@ the buffer when it becomes large.</p>
 <p><em>Default:</em> <code>⌛</code></p>
 <p>Progress prefix.</p>
 <hr />
+<h3 id="lsp-progress-spinner-type"><code>lsp-progress-spinner-type</code><a class="headerlink" href="#lsp-progress-spinner-type" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice :tag Choose a spinner by name (const 3-line-clock) (const 2-line-clock) (const flipping-line) (const rotating-line) (const progress-bar) (const progress-bar-filled) (const vertical-breathing) (const vertical-rising) (const horizontal-breathing) (const horizontal-breathing-long) (const horizontal-moving) (const minibox) (const triangle) (const box-in-box) (const box-in-circle) (const half-circle) (const moon))</code></p>
+<p><em>Default:</em> <code>progress-bar</code></p>
+<p>Holds the type of spinner to be used in the mode-line.
+Takes a value accepted by <code>spinner-start</code>.</p>
+<hr />
 <h3 id="lsp-progress-via-spinner"><code>lsp-progress-via-spinner</code><a class="headerlink" href="#lsp-progress-via-spinner" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -4660,6 +4786,11 @@ namespace SymbolKind.</p>
 <p><em>Default:</em> <code>https://marketplace.visualstudio.com/_apis/public/gallery/publishers/%s/vsextensions/%s/%s/vspackage</code></p>
 <p>Vscode extension template url.</p>
 <hr />
+<h3 id="lsp-warn-no-matched-clients"><code>lsp-warn-no-matched-clients</code><a class="headerlink" href="#lsp-warn-no-matched-clients" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Don`t show message when there are no supported clients.</p>
+<hr />
 <h3 id="lsp-workspace-folders-changed-functions"><code>lsp-workspace-folders-changed-functions</code><a class="headerlink" href="#lsp-workspace-folders-changed-functions" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>hook</code></p>
 <p><em>Default:</em> <code>nil</code></p>
@@ -4674,7 +4805,7 @@ The hook will receive two parameters list of added and removed folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 12, 2022</span>
       
     
   </small>
