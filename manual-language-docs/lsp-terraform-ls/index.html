@@ -1778,6 +1778,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../page/lsp-marksman/" class="md-nav__link">
+        Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/lsp-mssql" class="md-nav__link">
         MSSQL
       </a>
@@ -1864,6 +1878,20 @@
     <li class="md-nav__item">
       <a href="../../page/lsp-pascal/" class="md-nav__link">
         Pascal/Object Pascal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/lsp-pls/" class="md-nav__link">
+        Perl (PLS)
       </a>
     </li>
   
@@ -2972,6 +3000,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#lsp-terraform-ls-version" class="md-nav__link">
+    lsp-terraform-ls-version
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2987,6 +3022,13 @@
           <li class="md-nav__item">
   <a href="#semantic-token-support" class="md-nav__link">
     Semantic token support
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link-to-documentation" class="md-nav__link">
+    Link to Documentation
   </a>
   
 </li>
@@ -3082,9 +3124,12 @@
 
 <!-- Markdown content -->
 <h2 id="server-note">Server note<a class="headerlink" href="#server-note" title="Permanent link">#</a></h2>
-<p>Currently the mode supports two language servers. This <a href="https://emacs-lsp.github.io/lsp-mode/page/faq/#i-have-multiple-language-servers-registered-for-language-foo-which-one-will-be-used-when-opening-a-project">FAQ entry</a>
-shows how to choose a specific one. If you would want to go with the
-official Hashicorp's language server, set this:</p>
+<p>This page documents the official language server for Terraform by
+Hashicorp.</p>
+<p>Note that currently lsp-mode supports two terraform language
+servers. This <a href="https://emacs-lsp.github.io/lsp-mode/page/faq/#i-have-multiple-language-servers-registered-for-language-foo-which-one-will-be-used-when-opening-a-project">FAQ entry</a> shows how to choose a specific one. If
+you would want to go with the official Hashicorp's language server,
+set this:</p>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-disabled-clients</span> <span class="o">&#39;</span><span class="p">(</span><span class="nv">tfls</span><span class="p">))</span>
 </code></pre></div>
 <h2 id="terraform-ls">terraform-ls<a class="headerlink" href="#terraform-ls" title="Permanent link">#</a></h2>
@@ -3098,6 +3143,15 @@ published back in the buffer.</p>
 to make sure that that proper credentials are there.</p>
 <p>Note that this is a synchronous action and will timeout after a
 certain amount of time.</p>
+<h4 id="lsp-terraform-ls-version"><code>lsp-terraform-ls-version</code><a class="headerlink" href="#lsp-terraform-ls-version" title="Permanent link">#</a></h4>
+<p>This feature is only available on terraform-ls version &gt;= 0.29.0.</p>
+<p>Provides information about the terraform binary version for the
+current workspace. This is how it will look like in the minibuffer:</p>
+<div class="highlight"><pre><span></span><code>Required: 1.1.9, Current: 1.0.5
+</code></pre></div>
+<p>Note that if you have changed the version in your <code>$PATH</code> meanwhile,
+you would have to restart the lsp session using
+<code>lsp-workspace-restart</code> for it to pick up the newer version.</p>
 <h3 id="code-lens">Code Lens<a class="headerlink" href="#code-lens" title="Permanent link">#</a></h3>
 <p>This is an experimental feature which can be enabled via the option
 <code>lsp-terraform-ls-enable-show-reference</code>:</p>
@@ -3116,6 +3170,21 @@ semantic token support for terraform mode:</p>
 <p>And with semantic token support you get more contextual information
 via different faces:</p>
 <p><img alt="" src="../../examples/lsp-terraform-with-semantic-token.png" /></p>
+<h3 id="link-to-documentation">Link to Documentation<a class="headerlink" href="#link-to-documentation" title="Permanent link">#</a></h3>
+<p>Link to documentation from module sources for registry modules is
+available. Make sure you have this enabled:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">setq</span> <span class="nv">lsp-enable-links</span> <span class="no">t</span><span class="p">)</span>
+</code></pre></div>
+<p>Note that the default value of <code>lsp-enable-links</code> is <code>t</code>. So enabling
+it isn't strictly required, but you would require this feature for it
+to properly work.</p>
+<p>This gif demonstrates on how to use it:</p>
+<p><img alt="" src="../../examples/lsp-terraform-open-link.gif" /></p>
+<p>There are two ways to open the link:</p>
+<ul>
+<li>Key binding: Alt + Enter</li>
+<li>Clicking the middle button of your mouse</li>
+</ul>
 <h3 id="treeview-controls">Treeview controls<a class="headerlink" href="#treeview-controls" title="Permanent link">#</a></h3>
 <p>For this feature to work, make sure that you have <a href="https://github.com/emacs-lsp/lsp-treemacs">lsp-treemacs</a>
 installed.</p>
@@ -3141,7 +3210,7 @@ within the mode:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 25, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2022</span>
       
     
   </small>

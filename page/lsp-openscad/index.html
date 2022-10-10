@@ -1782,6 +1782,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-marksman/" class="md-nav__link">
+        Marksman
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/lsp-mssql" class="md-nav__link">
         MSSQL
       </a>
@@ -1921,8 +1935,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lsp-openscad-format-exe" class="md-nav__link">
+    lsp-openscad-format-exe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-openscad-format-style" class="md-nav__link">
+    lsp-openscad-format-style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-openscad-search-paths" class="md-nav__link">
+    lsp-openscad-search-paths
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-openscad-server" class="md-nav__link">
     lsp-openscad-server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-openscad-server-connection-type" class="md-nav__link">
+    lsp-openscad-server-connection-type
   </a>
   
 </li>
@@ -1949,6 +1991,20 @@
     <li class="md-nav__item">
       <a href="../lsp-pascal/" class="md-nav__link">
         Pascal/Object Pascal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-pls/" class="md-nav__link">
+        Perl (PLS)
       </a>
     </li>
   
@@ -3058,8 +3114,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lsp-openscad-format-exe" class="md-nav__link">
+    lsp-openscad-format-exe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-openscad-format-style" class="md-nav__link">
+    lsp-openscad-format-style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-openscad-search-paths" class="md-nav__link">
+    lsp-openscad-search-paths
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-openscad-server" class="md-nav__link">
     lsp-openscad-server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-openscad-server-connection-type" class="md-nav__link">
+    lsp-openscad-server-connection-type
   </a>
   
 </li>
@@ -3126,16 +3210,36 @@
 <!-- Markdown content -->
 <h1 id="openscad">OpenSCAD<a class="headerlink" href="#openscad" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://github.com/dzhu/openscad-language-server">openscad-language-server</a>.</p>
+<p>For more information about the LSP server, check <a href="https://github.com/Leathong/openscad-LSP">openscad-lsp</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p><code>cargo install openscad-language-server</code></p>
-<p>For more instructions on how to install manually, check <a href="https://github.com/dzhu/openscad-language-server">here</a>.</p>
+<p><code>cargo install openscad-lsp</code></p>
+<p>For more instructions on how to install manually, check <a href="https://github.com/Leathong/openscad-LSP">here</a>.</p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-openscad-format-exe"><code>lsp-openscad-format-exe</code><a class="headerlink" href="#lsp-openscad-format-exe" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>clang-format</code></p>
+<p>Path to the clang-format executable.</p>
+<hr />
+<h3 id="lsp-openscad-format-style"><code>lsp-openscad-format-style</code><a class="headerlink" href="#lsp-openscad-format-style" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> <code>file</code></p>
+<p>Style argument to use with clang-format.</p>
+<hr />
+<h3 id="lsp-openscad-search-paths"><code>lsp-openscad-search-paths</code><a class="headerlink" href="#lsp-openscad-search-paths" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>string</code></p>
+<p><em>Default:</em> ``</p>
+<p>Customized search path.</p>
+<hr />
 <h3 id="lsp-openscad-server"><code>lsp-openscad-server</code><a class="headerlink" href="#lsp-openscad-server" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
-<p><em>Default:</em> <code>openscad-language-server</code></p>
+<p><em>Default:</em> <code>openscad-lsp</code></p>
 <p>Path to the openscad language server.</p>
+<hr />
+<h3 id="lsp-openscad-server-connection-type"><code>lsp-openscad-server-connection-type</code><a class="headerlink" href="#lsp-openscad-server-connection-type" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>symbol</code></p>
+<p><em>Default:</em> <code>tcp</code></p>
+<p>Type of connection to use with the OpenSCAD Language Server: tcp or stdio.</p>
 <hr />
 
 <!-- Source file information -->
@@ -3145,7 +3249,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 25, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 10, 2022</span>
       
     
   </small>
