@@ -34,6 +34,15 @@
     "debugger": "Not available"
   },
   {
+    "name": "astro",
+    "full-name": "Astro",
+    "server-name": "astro-ls",
+    "server-url": "https://github.com/withastro/language-tools",
+    "installation": "npm i -g @astrojs/language-server",
+    "lsp-install-server": "astro-ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "bash",
     "full-name": "Bash",
     "server-name": "bash-language-server",
@@ -422,8 +431,9 @@
     "full-name": "GE Smallworld Magik",
     "server-name": "magik-language-server",
     "server-url": "https://github.com/StevenLooman/magik-tools",
-    "installation": "https://github.com/StevenLooman/magik-tools/releases",
-    "debugger": "Not implemented"
+    "installation": "Automatic by lsp-mode with `lsp-install-server`",
+    "lsp-install-server": "magik-ls",
+    "debugger": "Yes"
   },
   {
     "name": "markdown",
@@ -490,7 +500,7 @@
     "debugger": "Not available"
   },
   {
-    "name": "nix",
+    "name": "nix-nil",
     "full-name": "Nix",
     "server-name": "nix-nil",
     "server-url": "https://github.com/oxalica/nil",
@@ -897,8 +907,8 @@
     "full-name": "Vue 3",
     "server-name": "volar-language-server",
     "server-url": "https://github.com/johnsoncodehk/volar",
-    "installation": "npm install -g @volar/server",
-    "lsp-install-server": "volar-api",
+    "installation": "npm install -g @volar/vue-language-server",
+    "lsp-install-server": "vue-semantic-server",
     "debugger": "Not available"
   },
   {
