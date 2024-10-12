@@ -1222,6 +1222,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-bufls/" class="md-nav__link">
+        Buf/Protocol Buffers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-camel/" class="md-nav__link">
         Camel
       </a>
@@ -1345,6 +1359,20 @@
   
     <nav class="md-nav" aria-label="Available configurations">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lsp-csharp-csharpls-use-dotnet-tool" class="md-nav__link">
+    lsp-csharp-csharpls-use-dotnet-tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-csharp-csharpls-use-local-tool" class="md-nav__link">
+    lsp-csharp-csharpls-use-local-tool
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#lsp-csharp-omnisharp-enable-decompilation-support" class="md-nav__link">
@@ -1641,6 +1669,20 @@
     <li class="md-nav__item">
       <a href="../lsp-fortran/" class="md-nav__link">
         Fortran
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-futhark/" class="md-nav__link">
+        Futhark
       </a>
     </li>
   
@@ -2465,7 +2507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-ruff-lsp/" class="md-nav__link">
+      <a href="../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
     </li>
@@ -3576,6 +3618,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#lsp-csharp-csharpls-use-dotnet-tool" class="md-nav__link">
+    lsp-csharp-csharpls-use-dotnet-tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-csharp-csharpls-use-local-tool" class="md-nav__link">
+    lsp-csharp-csharpls-use-local-tool
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-csharp-omnisharp-enable-decompilation-support" class="md-nav__link">
     lsp-csharp-omnisharp-enable-decompilation-support
   </a>
@@ -3644,13 +3700,26 @@
 <!-- Markdown content -->
 <h1 id="c-csharp-roslyn">C# (csharp-roslyn)<a class="headerlink" href="#c-csharp-roslyn" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://github.com/dotnet/roslyn/tree/main/src/Features/LanguageServer">Microsoft.CodeAnalysis.LanguageServer (Roslyn)</a>.</p>
+<p>For more information about the LSP server, check <a href="https://github.com/dotnet/roslyn/tree/main/src/LanguageServer">Microsoft.CodeAnalysis.LanguageServer (Roslyn)</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <p>This Server supports automatic install.
 Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><kbd>RET</kbd><code>csharp-roslyn</code><kbd>RET</kbd>.</p>
 <p><code>Supports automatic installation via NuGet</code></p>
 <h3 id="debugger-yes-netcoredbg">Debugger: Yes (netcoredbg)<a class="headerlink" href="#debugger-yes-netcoredbg" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
+<h3 id="lsp-csharp-csharpls-use-dotnet-tool"><code>lsp-csharp-csharpls-use-dotnet-tool</code><a class="headerlink" href="#lsp-csharp-csharpls-use-dotnet-tool" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>Whether to use a dotnet tool version of the expected C#
+ language server; only available for csharp-ls</p>
+<hr />
+<h3 id="lsp-csharp-csharpls-use-local-tool"><code>lsp-csharp-csharpls-use-local-tool</code><a class="headerlink" href="#lsp-csharp-csharpls-use-local-tool" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>nil</code></p>
+<p>Whether to use csharp-ls as a global or local dotnet tool.</p>
+<p>Note: this variable has no effect if
+lsp-csharp-csharpls-use-dotnet-tool is nil.</p>
+<hr />
 <h3 id="lsp-csharp-omnisharp-enable-decompilation-support"><code>lsp-csharp-omnisharp-enable-decompilation-support</code><a class="headerlink" href="#lsp-csharp-omnisharp-enable-decompilation-support" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
@@ -3665,7 +3734,7 @@ Otherwise only declarations for the methods are visible (the default).</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 6, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
       
     
   </small>

@@ -1222,6 +1222,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-bufls/" class="md-nav__link">
+        Buf/Protocol Buffers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-camel/" class="md-nav__link">
         Camel
       </a>
@@ -1560,6 +1574,20 @@
     <li class="md-nav__item">
       <a href="../lsp-fortran/" class="md-nav__link">
         Fortran
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-futhark/" class="md-nav__link">
+        Futhark
       </a>
     </li>
   
@@ -2384,7 +2412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-ruff-lsp/" class="md-nav__link">
+      <a href="../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
     </li>
@@ -3097,6 +3125,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-yaml-schema-extensions" class="md-nav__link">
+    lsp-yaml-schema-extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-yaml-schema-store-enable" class="md-nav__link">
     lsp-yaml-schema-store-enable
   </a>
@@ -3730,6 +3765,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-yaml-schema-extensions" class="md-nav__link">
+    lsp-yaml-schema-extensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-yaml-schema-store-enable" class="md-nav__link">
     lsp-yaml-schema-store-enable
   </a>
@@ -3891,6 +3933,13 @@ Limited for performance reasons.</p>
    Never: never wrap the prose.
    Preserve: wrap prose as-is.</p>
 <hr />
+<h3 id="lsp-yaml-schema-extensions"><code>lsp-yaml-schema-extensions</code><a class="headerlink" href="#lsp-yaml-schema-extensions" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>list</code></p>
+<p><em>Default:</em> <code>(((name . Kubernetes v1.30.3) (description . Kubernetes v1.30.3 manifest schema definition) (url . https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.30.3-standalone-strict/all.json) (fileMatch . [*-k8s.yaml *-k8s.yml])))</code></p>
+<p>User defined schemas that extend default schema store.
+Used in <code>lsp-yaml--get-supported-schemas</code> to supplement schemas provided by
+<code>lsp-yaml-schema-store-uri</code>.</p>
+<hr />
 <h3 id="lsp-yaml-schema-store-enable"><code>lsp-yaml-schema-store-enable</code><a class="headerlink" href="#lsp-yaml-schema-store-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -3935,7 +3984,7 @@ Limited for performance reasons.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 6, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
       
     
   </small>
