@@ -12,14 +12,14 @@
         <meta name="author" content="ercdll1337@gmail.com">
       
       
-        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-futhark/">
+        <link rel="canonical" href="https://emacs-lsp.github.io/lsp-mode/page/lsp-c3-lsp/">
       
       <link rel="icon" href="../../examples/logo-mini.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.0.0">
     
     
       
-        <title>Futhark - LSP Mode - LSP support for Emacs</title>
+        <title>C3 (c3-lsp) - LSP Mode - LSP support for Emacs</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#futhark" class="md-skip">
+        <a href="#c3-language-server" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Futhark
+              C3 (c3-lsp)
             
           </span>
         </div>
@@ -1332,11 +1332,79 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../lsp-c3-lsp/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          C3 (c3-lsp)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         C3 (c3-lsp)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server" class="md-nav__link">
+    Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debugger-yes-gdb-or-lldb" class="md-nav__link">
+    Debugger: Yes (gdb or lldb)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#available-configurations" class="md-nav__link">
+    Available configurations
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1640,79 +1708,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Futhark
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../lsp-futhark/" class="md-nav__link">
         Futhark
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#available-configurations" class="md-nav__link">
-    Available configurations
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3753,8 +3753,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debugger-not-available" class="md-nav__link">
-    Debugger: Not available
+  <a href="#debugger-yes-gdb-or-lldb" class="md-nav__link">
+    Debugger: Yes (gdb or lldb)
   </a>
   
 </li>
@@ -3807,7 +3807,7 @@
 <!-- Edit button -->
 
 <a
-  href="https://github.com/emacs-lsp/lsp-mode/edit/master/clients/lsp-futhark.el"
+  href="https://github.com/emacs-lsp/lsp-mode/edit/master/clients/lsp-c3-lsp.el"
   title="Edit this page"
   class="md-content__button md-icon"
 >
@@ -3826,12 +3826,12 @@
 
 
 <!-- Markdown content -->
-<h1 id="futhark">Futhark<a class="headerlink" href="#futhark" title="Permanent link">#</a></h1>
+<h1 id="c3-language-server">c3 language server<a class="headerlink" href="#c3-language-server" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://github.com/diku-dk/futhark">futhark-lsp</a>.</p>
+<p>For more information about the LSP server, check <a href="https://github.com/pherrymason/c3-lsp">c3lsp</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p><code>A part of the compiler since 0.21.9</code></p>
-<h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
+<p>For more instructions on how to install manually, check <a href="https://github.com/pherrymason/c3-lsp">here</a>.</p>
+<h3 id="debugger-yes-gdb-or-lldb">Debugger: Yes (gdb or lldb)<a class="headerlink" href="#debugger-yes-gdb-or-lldb" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
 
 <!-- Source file information -->
@@ -3859,7 +3859,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../lsp-fortran/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fortran" rel="prev">
+        <a href="../lsp-csharp-ls/" class="md-footer__link md-footer__link--prev" aria-label="Previous: C# (csharp-ls)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3868,20 +3868,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Fortran
+              C# (csharp-ls)
             </div>
           </div>
         </a>
       
       
         
-        <a href="../lsp-gdscript/" class="md-footer__link md-footer__link--next" aria-label="Next: GDScript" rel="next">
+        <a href="../lsp-clojure/" class="md-footer__link md-footer__link--next" aria-label="Next: Clojure" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              GDScript
+              Clojure
             </div>
           </div>
           <div class="md-footer__button md-icon">
