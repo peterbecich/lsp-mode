@@ -1746,6 +1746,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-copilot-auth-check-delay" class="md-nav__link">
+    lsp-copilot-auth-check-delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-copilot-enabled" class="md-nav__link">
     lsp-copilot-enabled
   </a>
@@ -2675,6 +2682,20 @@
   
   
     <li class="md-nav__item">
+      <a href="https://github.com/astral-sh/ty" class="md-nav__link">
+        Python (ty)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-qml.md" class="md-nav__link">
         QML
       </a>
@@ -2929,6 +2950,20 @@
     <li class="md-nav__item">
       <a href="../lsp-sqls/" class="md-nav__link">
         SQL (sqls)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-postgres/" class="md-nav__link">
+        SQL (postgres-ls)
       </a>
     </li>
   
@@ -3835,6 +3870,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-copilot-auth-check-delay" class="md-nav__link">
+    lsp-copilot-auth-check-delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-copilot-enabled" class="md-nav__link">
     lsp-copilot-enabled
   </a>
@@ -3938,9 +3980,9 @@
 <!-- Markdown content -->
 <h1 id="github-copilot">Github Copilot<a class="headerlink" href="#github-copilot" title="Permanent link">#</a></h1>
 <h2 id="server">Server<a class="headerlink" href="#server" title="Permanent link">#</a></h2>
-<p>For more information about the LSP server, check <a href="https://www.npmjs.com/package/copilot-node-server">copilot-node-server</a>.</p>
+<p>For more information about the LSP server, check <a href="https://www.npmjs.com/package/@github/copilot-language-server">copilot-language-server</a>.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
-<p>For more instructions on how to install manually, check <a href="https://www.npmjs.com/package/copilot-node-server">here</a>.</p>
+<p>For more instructions on how to install manually, check <a href="https://www.npmjs.com/package/@github/copilot-language-server">here</a>.</p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
 <h3 id="lsp-copilot-applicable-fn"><code>lsp-copilot-applicable-fn</code><a class="headerlink" href="#lsp-copilot-applicable-fn" title="Permanent link">#</a></h3>
@@ -3948,6 +3990,12 @@
 <p><em>Default:</em> <code>(closure (t) (&amp;rest _) lsp-copilot-enabled)</code></p>
 <p>A function which returns whether the copilot is applicable for the buffer.
 The input are the file name and the major mode of the buffer.</p>
+<hr />
+<h3 id="lsp-copilot-auth-check-delay"><code>lsp-copilot-auth-check-delay</code><a class="headerlink" href="#lsp-copilot-auth-check-delay" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>(choice (const :tag Do not check nil) (integer :tag Seconds 5))</code></p>
+<p><em>Default:</em> <code>5</code></p>
+<p>How much time to wait before checking if the server is properly authenticated.</p>
+<p>Set this value to nil if you do not want for the check to be made.</p>
 <hr />
 <h3 id="lsp-copilot-enabled"><code>lsp-copilot-enabled</code><a class="headerlink" href="#lsp-copilot-enabled" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3989,7 +4037,7 @@ lsp-install-server to fetch an emacs-local version of the LSP.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 15, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 18, 2025</span>
       
     
   </small>

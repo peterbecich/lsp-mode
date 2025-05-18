@@ -119,9 +119,9 @@
   {
     "name": "copilot",
     "full-name": "Github Copilot",
-    "server-name": "copilot-node-server",
-    "server-url": "https://www.npmjs.com/package/copilot-node-server",
-    "installation-url": "https://www.npmjs.com/package/copilot-node-server",
+    "server-name": "copilot-language-server",
+    "server-url": "https://www.npmjs.com/package/@github/copilot-language-server",
+    "installation-url": "https://www.npmjs.com/package/@github/copilot-language-server",
     "debugger": "Not available"
   },
   {
@@ -941,6 +941,16 @@
     "debugger": "Yes"
   },
   {
+    "name": "python-ty",
+    "full-name": "Python (ty)",
+    "server-name": "LSP support for Python(ty).",
+    "server-url": "https://github.com/astral-sh/ty",
+    "client-name": "lsp-python-ty",
+    "client-url": "https://github.com/astral-sh/ty",
+    "installation-url": "https://github.com/astral-sh/ty",
+    "debugger": "Yes"
+  },
+  {
     "name": "qml-ls",
     "full-name": "QML (Qt Modeling Language)",
     "server-name": "QML Language Server",
@@ -1116,6 +1126,14 @@
     "server-name": "sqls",
     "server-url": "https://github.com/sqls-server/sqls",
     "installation": "go install github.com/sqls-server/sqls@latest",
+    "debugger": "Not available"
+  },
+  {
+    "name": "postgres",
+    "full-name": "SQL (postgres-ls)",
+    "server-name": "postgres-language-server",
+    "server-url": "https://github.com/supabase-community/postgres-language-server",
+    "installation-url": "https://pgtools.dev/#installation",
     "debugger": "Not available"
   },
   {
